@@ -1,0 +1,5 @@
+alert_load_level,critical_windows,critical_alerts,baseline_missed,adaptive_group_budget_missed,adaptive_alert_budget_missed,baseline_first_rank,adaptive_group_first_rank,adaptive_alert_first_rank,baseline_coverage,adaptive_group_budget_coverage,adaptive_alert_budget_coverage,mean_display_items,max_display_items,mean_review_budget,baseline_missed_rate,adaptive_group_budget_missed_rate,adaptive_alert_budget_missed_rate
+Low,,,,,,,,,,,,,,,,,
+Moderate,1.0,1.0,0.0,0.0,0.0,6.0,3.0,3.0,1.0,1.0,1.0,9.0,9.0,9.0,0.0,0.0,0.0
+High,12.0,15.0,2.0,0.0,0.0,10.0,1.0,5.333333333333333,0.7777777777777778,1.0,0.9444444444444445,2.0833333333333335,3.0,15.5,0.16666666666666666,0.0,0.0
+Burst,44.0,224.0,35.0,0.0,31.0,32.84090909090909,1.0,29.75,0.13334804815067972,1.0,0.18660382015645174,2.8863636363636362,3.0,9.977272727272727,0.7954545454545454,0.0,0.7045454545454546

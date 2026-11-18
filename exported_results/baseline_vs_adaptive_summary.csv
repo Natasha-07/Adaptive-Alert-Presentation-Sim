@@ -1,0 +1,6 @@
+alert_load_level,windows,total_baseline_alerts,total_adaptive_display_items,avg_baseline_first_critical_rank,avg_adaptive_first_critical_rank,baseline_missed_risk_rate,adaptive_missed_risk_rate,alert_reduction_rate
+Burst,57,11938,161,32.84090909090909,1.0,0.6140350877192983,0.0,0.9865136538783715
+High,114,1760,234,10.0,1.0,0.017543859649122806,0.0,0.8670454545454546
+Idle,5680,0,0,,,0.0,0.0,1.0
+Low,228,562,562,,,0.0,0.0,0.0
+Moderate,168,1970,1970,6.0,3.0,0.0,0.0,0.0

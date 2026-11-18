@@ -1,0 +1,5 @@
+task,model,split_strategy,accuracy,balanced_accuracy,macro_f1,weighted_f1
+next_active_window_workload_level_prediction,Random Forest,Chronological,0.581081081081081,0.5596590909090909,0.5516732542819499,0.568672862585906
+next_active_window_workload_level_prediction,Persistence Baseline,Chronological,0.5675675675675675,0.5448863636363637,0.5346592497670084,0.5509689932243521
+next_active_window_workload_level_prediction,Logistic Regression,Chronological,0.3918918918918919,0.4036931818181818,0.394672891836817,0.39399602573553605
+next_active_window_workload_level_prediction,Gradient Boosting,Chronological,0.33783783783783783,0.3488636363636364,0.3123395445134575,0.3048200996027083

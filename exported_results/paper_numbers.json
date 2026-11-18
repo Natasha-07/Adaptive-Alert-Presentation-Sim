@@ -1,0 +1,279 @@
+{
+  "simulated_alerts": 16230,
+  "attack_alerts": 10391,
+  "duplicate_alerts": 1361,
+  "background_alerts": 4478,
+  "simulated_critical_alerts": 240,
+  "timeline_windows": 6247,
+  "active_windows": 567,
+  "timestamp_min": "2017-07-03 08:56:00",
+  "timestamp_max": "2017-07-07 17:02:00",
+  "per_level": {
+    "Low": {
+      "windows": 228,
+      "alerts": 562,
+      "adaptive_display_items": 562,
+      "mean_workload_proxy": 0.24481432602033723,
+      "median_alerts_per_window": 2.0
+    },
+    "Moderate": {
+      "windows": 168,
+      "alerts": 1970,
+      "adaptive_display_items": 1970,
+      "mean_workload_proxy": 0.34138402727573147,
+      "median_alerts_per_window": 12.0
+    },
+    "High": {
+      "windows": 114,
+      "alerts": 1760,
+      "adaptive_display_items": 234,
+      "mean_workload_proxy": 0.3764466382991291,
+      "median_alerts_per_window": 11.0
+    },
+    "Burst": {
+      "windows": 57,
+      "alerts": 11938,
+      "adaptive_display_items": 161,
+      "mean_workload_proxy": 0.5200431580429079,
+      "median_alerts_per_window": 179.0
+    }
+  },
+  "overall": {
+    "Total baseline alerts": 16230.0,
+    "Total adaptive display items": 2927.0,
+    "Overall alert reduction": 0.8196549599507086
+  },
+  "critical_windows": [
+    {
+      "alert_load_level": "Low",
+      "critical_windows": null,
+      "critical_alerts": null,
+      "baseline_missed": null,
+      "adaptive_group_budget_missed": null,
+      "adaptive_alert_budget_missed": null,
+      "baseline_first_rank": null,
+      "adaptive_group_first_rank": null,
+      "adaptive_alert_first_rank": null,
+      "baseline_coverage": null,
+      "adaptive_group_budget_coverage": null,
+      "adaptive_alert_budget_coverage": null,
+      "mean_display_items": null,
+      "max_display_items": null,
+      "mean_review_budget": null,
+      "baseline_missed_rate": null,
+      "adaptive_group_budget_missed_rate": null,
+      "adaptive_alert_budget_missed_rate": null
+    },
+    {
+      "alert_load_level": "Moderate",
+      "critical_windows": 1.0,
+      "critical_alerts": 1.0,
+      "baseline_missed": 0.0,
+      "adaptive_group_budget_missed": 0.0,
+      "adaptive_alert_budget_missed": 0.0,
+      "baseline_first_rank": 6.0,
+      "adaptive_group_first_rank": 3.0,
+      "adaptive_alert_first_rank": 3.0,
+      "baseline_coverage": 1.0,
+      "adaptive_group_budget_coverage": 1.0,
+      "adaptive_alert_budget_coverage": 1.0,
+      "mean_display_items": 9.0,
+      "max_display_items": 9.0,
+      "mean_review_budget": 9.0,
+      "baseline_missed_rate": 0.0,
+      "adaptive_group_budget_missed_rate": 0.0,
+      "adaptive_alert_budget_missed_rate": 0.0
+    },
+    {
+      "alert_load_level": "High",
+      "critical_windows": 12.0,
+      "critical_alerts": 15.0,
+      "baseline_missed": 2.0,
+      "adaptive_group_budget_missed": 0.0,
+      "adaptive_alert_budget_missed": 0.0,
+      "baseline_first_rank": 10.0,
+      "adaptive_group_first_rank": 1.0,
+      "adaptive_alert_first_rank": 5.333333333333333,
+      "baseline_coverage": 0.7777777777777778,
+      "adaptive_group_budget_coverage": 1.0,
+      "adaptive_alert_budget_coverage": 0.9444444444444445,
+      "mean_display_items": 2.0833333333333335,
+      "max_display_items": 3.0,
+      "mean_review_budget": 15.5,
+      "baseline_missed_rate": 0.16666666666666666,
+      "adaptive_group_budget_missed_rate": 0.0,
+      "adaptive_alert_budget_missed_rate": 0.0
+    },
+    {
+      "alert_load_level": "Burst",
+      "critical_windows": 44.0,
+      "critical_alerts": 224.0,
+      "baseline_missed": 35.0,
+      "adaptive_group_budget_missed": 0.0,
+      "adaptive_alert_budget_missed": 31.0,
+      "baseline_first_rank": 32.84090909090909,
+      "adaptive_group_first_rank": 1.0,
+      "adaptive_alert_first_rank": 29.75,
+      "baseline_coverage": 0.13334804815067972,
+      "adaptive_group_budget_coverage": 1.0,
+      "adaptive_alert_budget_coverage": 0.18660382015645174,
+      "mean_display_items": 2.8863636363636362,
+      "max_display_items": 3.0,
+      "mean_review_budget": 9.977272727272727,
+      "baseline_missed_rate": 0.7954545454545454,
+      "adaptive_group_budget_missed_rate": 0.0,
+      "adaptive_alert_budget_missed_rate": 0.7045454545454546
+    }
+  ],
+  "workload_results": [
+    {
+      "task": "next_active_window_workload_level_prediction",
+      "model": "Random Forest",
+      "split_strategy": "Chronological",
+      "accuracy": 0.581081081081081,
+      "balanced_accuracy": 0.5596590909090909,
+      "macro_f1": 0.5516732542819499,
+      "weighted_f1": 0.568672862585906
+    },
+    {
+      "task": "next_active_window_workload_level_prediction",
+      "model": "Persistence Baseline",
+      "split_strategy": "Chronological",
+      "accuracy": 0.5675675675675675,
+      "balanced_accuracy": 0.5448863636363637,
+      "macro_f1": 0.5346592497670084,
+      "weighted_f1": 0.5509689932243521
+    },
+    {
+      "task": "next_active_window_workload_level_prediction",
+      "model": "Logistic Regression",
+      "split_strategy": "Chronological",
+      "accuracy": 0.3918918918918919,
+      "balanced_accuracy": 0.4036931818181818,
+      "macro_f1": 0.394672891836817,
+      "weighted_f1": 0.39399602573553605
+    },
+    {
+      "task": "next_active_window_workload_level_prediction",
+      "model": "Gradient Boosting",
+      "split_strategy": "Chronological",
+      "accuracy": 0.33783783783783783,
+      "balanced_accuracy": 0.3488636363636364,
+      "macro_f1": 0.3123395445134575,
+      "weighted_f1": 0.3048200996027083
+    }
+  ],
+  "overload_results": [
+    {
+      "task": "next_window_overload_prediction",
+      "model": "Random Forest",
+      "split_strategy": "Chronological",
+      "accuracy": 0.7297297297297297,
+      "balanced_accuracy": 0.7061011904761905,
+      "precision": 0.7115384615384616,
+      "recall": 0.8809523809523809,
+      "f1": 0.7872340425531915,
+      "roc_auc": 0.7455357142857143,
+      "average_precision": 0.7277927585143096
+    },
+    {
+      "task": "next_window_overload_prediction",
+      "model": "Persistence Baseline",
+      "split_strategy": "Chronological",
+      "accuracy": 0.7432432432432432,
+      "balanced_accuracy": 0.7328869047619048,
+      "precision": 0.7555555555555555,
+      "recall": 0.8095238095238095,
+      "f1": 0.7816091954022989,
+      "roc_auc": 0.7328869047619048,
+      "average_precision": 0.7197483197483198
+    },
+    {
+      "task": "next_window_overload_prediction",
+      "model": "Gradient Boosting",
+      "split_strategy": "Chronological",
+      "accuracy": 0.7162162162162162,
+      "balanced_accuracy": 0.7090773809523809,
+      "precision": 0.7441860465116279,
+      "recall": 0.7619047619047619,
+      "f1": 0.7529411764705882,
+      "roc_auc": 0.7161458333333333,
+      "average_precision": 0.7094782569743032
+    },
+    {
+      "task": "next_window_overload_prediction",
+      "model": "Logistic Regression",
+      "split_strategy": "Chronological",
+      "accuracy": 0.6216216216216216,
+      "balanced_accuracy": 0.6071428571428572,
+      "precision": 0.6521739130434783,
+      "recall": 0.7142857142857143,
+      "f1": 0.6818181818181818,
+      "roc_auc": 0.6439732142857143,
+      "average_precision": 0.688557935946175
+    }
+  ],
+  "missed_risk_results": [
+    {
+      "task": "next_window_missed_risk",
+      "model": "Random Forest",
+      "split_strategy": "Chronological",
+      "balanced_accuracy": 0.896551724137931,
+      "precision": 0.5714285714285714,
+      "recall": 1.0,
+      "f1": 0.7272727272727273,
+      "roc_auc": 0.9719827586206896,
+      "average_precision": 0.8608905108572795
+    },
+    {
+      "task": "next_window_missed_risk",
+      "model": "Persistence Baseline",
+      "split_strategy": "Chronological",
+      "balanced_accuracy": 0.8803879310344828,
+      "precision": 0.8125,
+      "recall": 0.8125,
+      "f1": 0.8125,
+      "roc_auc": 0.8803879310344828,
+      "average_precision": 0.7006967905405406
+    },
+    {
+      "task": "next_window_missed_risk",
+      "model": "Gradient Boosting",
+      "split_strategy": "Chronological",
+      "balanced_accuracy": 0.5765086206896552,
+      "precision": 0.6,
+      "recall": 0.1875,
+      "f1": 0.2857142857142857,
+      "roc_auc": 0.9040948275862069,
+      "average_precision": 0.6442050552104901
+    },
+    {
+      "task": "next_window_missed_risk",
+      "model": "Logistic Regression",
+      "split_strategy": "Chronological",
+      "balanced_accuracy": 0.6390086206896552,
+      "precision": 0.7142857142857143,
+      "recall": 0.3125,
+      "f1": 0.43478260869565216,
+      "roc_auc": 0.7144396551724138,
+      "average_precision": 0.5123220588856325
+    }
+  ],
+  "workload_split": {
+    "strategy": "Chronological",
+    "train": 220,
+    "test": 74
+  },
+  "overload_split": {
+    "train": 220,
+    "test": 74,
+    "train_positive": 59,
+    "test_positive": 42
+  },
+  "missed_risk_split": {
+    "train_positive": 20,
+    "test_positive": 16,
+    "train": 220,
+    "test": 74
+  }
+}

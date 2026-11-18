@@ -1,0 +1,35 @@
+{
+  "seed": 42,
+  "max_analysis_rows": 50000,
+  "window_size": "60s",
+  "data_source_mode": "local_workspace",
+  "baseline_attention_limits": {
+    "Low": 50,
+    "Moderate": 35,
+    "High": 20,
+    "Burst": 10
+  },
+  "miss_risk_coverage_threshold": 0.2,
+  "rows_after_cleaning": 50000,
+  "simulated_alerts": 16230,
+  "analysis_windows": 6247,
+  "active_windows": 567,
+  "figure_paths": [
+    "exported_results/workload_confusion_matrix.png",
+    "exported_results/overload_confusion_matrix.png",
+    "exported_results/workload_feature_importance.png",
+    "exported_results/overload_feature_importance.png",
+    "exported_results/missed_risk_feature_importance.png",
+    "exported_results/alert_volume_over_time.png",
+    "exported_results/workload_score_over_time.png",
+    "exported_results/alert_load_level_distribution.png",
+    "exported_results/attack_type_distribution.png",
+    "exported_results/baseline_vs_adaptive_alert_count.png",
+    "exported_results/critical_visibility_improvement.png",
+    "exported_results/workload_by_alert_load_level.png",
+    "exported_results/alert_reduction_rate_by_level.png",
+    "exported_results/baseline_vs_adaptive_critical_rank_critical_only.png",
+    "exported_results/baseline_vs_adaptive_missed_risk.png",
+    "exported_results/alert_volume_by_day.png"
+  ]
+}
